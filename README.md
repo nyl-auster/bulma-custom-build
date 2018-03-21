@@ -7,7 +7,7 @@ npm i
 npm run build
 ```
 
-rebuild css file automatically on chang:
+rebuild css file automatically on change:
 
 ```
 npm start
