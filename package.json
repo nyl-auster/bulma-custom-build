@@ -1,0 +1,22 @@
+{
+  "name": "custom-bulma-build",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^4.1.0",
+    "rimraf": "^2.6.1"
+  },
+  "scripts": {
+    "build":
+      "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix":
+      "postcss --use autoprefixer --map false --output css/bulma.css css/bulma.css",
+    "build-clean": "rimraf css",
+    "build-sass":
+      "node-sass --output-style expanded --source-map true sass/custom-bulma.sass css/bulma.css",
+    "start": "npm run build-sass -- --watch"
+  },
+  "dependencies": {
+    "bulma": "^0.6.2"
+  }
+}
