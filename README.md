@@ -18,7 +18,7 @@ npm start
 edit sass/custom-bulma.sass
 
 ```
-$primary: red !default
+$primary: red;
 ```
 
 rebuild css file :
